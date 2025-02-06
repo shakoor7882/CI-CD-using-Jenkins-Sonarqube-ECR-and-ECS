@@ -168,7 +168,4 @@ We can now access the app from the URl present in the Networking tab of the ecs-
 ## Conclusion 
 Using the above steps I have setup an automated Continous Integration and Continous Deployment pipeline using Jenkins, Sonarqube, ECR and ECS for vprofile application. Use this document to implement the architecture and share among your friends. Have a good day.😊
 
-## References 
-- https://www.udemy.com/course/decodingdevops
-- https://github.com/devopshydclub/vprofile-project/tree/docker
   
