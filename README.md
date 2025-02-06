@@ -8,7 +8,7 @@ Looking in the past, developers on a team might work in isolation for an extende
 
 Using **Continous Integration** helps us to tackle the issue by quickly building and running tests on the whole source code and quickly surfacing any errors for correction. **Continous Deployment** then helps us to quickly deploy the updated changes of the application without any delay.
 
-In this project we are going to setup a code pipeline script using Jenkins which fetches the source code, builds it, scans the code using Sonarqube, uploads the artifact to Amazon ECR repository and finally deploys it on Amazon ECS. This project uses the source code of vprofile-application; a Java application intended to be a social media platform. 
+In this project we are going to setup a code pipeline script using Jenkins which fetches the source code, builds it, scans the code using Sonarqube, uploads the artifact to Amazon ECR repository and finally deploys it on Amazon ECS. This project uses the source code of application; a Java application intended to be a social media platform. 
 
 ## Tools/Services Used
 - _Jenkins_ : A CI CD tool used worldwide for software development purposes.
@@ -36,7 +36,7 @@ The following processes take place when a code change is pushed to the central v
 ### Launch EC2 instances each for jenkins, nexus and sonarqube
 - Login to AWS management console.
 - Go to EC2, launch instance.
-- On local machine, open cmd, checkout to ci-jenkins branch on vprofile-project repository.
+- On local machine, open cmd, checkout to ci-jenkins branch on project repository.
 - Checkout to ci-jenkins branch.
 - _Jenkins_
     - _OS_: ubuntu 20/18
@@ -166,6 +166,6 @@ As we can see the app deployment on ECS cluster is successful.
 We can now access the app from the URl present in the Networking tab of the ecs-service.
 
 ## Conclusion 
-Using the above steps I have setup an automated Continous Integration and Continous Deployment pipeline using Jenkins, Sonarqube, ECR and ECS for vprofile application. Use this document to implement the architecture and share among your friends. Have a good day.😊
+Using the above steps I have setup an automated Continous Integration and Continous Deployment pipeline using Jenkins, Sonarqube, ECR and ECS for application. Use this document to implement the architecture and share among your friends. Have a good day.😊
 
   
